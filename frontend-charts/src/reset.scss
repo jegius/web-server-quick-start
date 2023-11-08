@@ -1,0 +1,43 @@
+/* Полностью сбрасываем все отступы и границы */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Используем border-box вместо content-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Убираем подчеркивания у ссылок и добавляем цвет по умолчанию */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем обводку у кнопок и input'ов */
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Устанавливаем базовые настройки шрифта */
+html {
+  font-size: 16px; /* 1rem = 16px */
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Обеспечивает удобное чтение текста */
+}
+
+/* Управляем внешним видом списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Устанавливаем основную настройку для включения и выключения элементов в CSS */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

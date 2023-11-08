@@ -1,0 +1,10 @@
+.path {
+  filter: drop-shadow(0 0 0 transparent);
+  transition: filter .5s ease, transform .5s ease, stroke .3s ease, stroke-width .3s ease, stroke-dasharray .5s ease;
+
+  &.active {
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dasharray: 0;
+  }
+}

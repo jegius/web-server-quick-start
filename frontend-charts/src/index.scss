@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  justify-content: space-around;
+
+  .chart-item {
+    justify-content: center;
+    min-height: 30rem;
+    min-width: 30rem;
+  }
+}
