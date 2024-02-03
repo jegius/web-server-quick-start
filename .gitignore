@@ -1,16 +1,13 @@
 # .gitignore
 
 # Node.js dependencies
-/node_modules/
+**/node_modules/
 
-# Vite build directory
-/dist/
-
-# Nest.js build directory
-/dist/
+# Build directories
+**/dist/
 
 # Logs
-/logs
+**/logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -18,15 +15,15 @@ yarn-error.log*
 lerna-debug.log*
 
 # Runtime data
-/pids
+**/pids/
 *.pid
 *.seed
 *.pid.lock
 
 # Coverage directory used by tools like nyc
-/coverage
+**/coverage/
 
-# dotenv files
+# dotenv environment variable files
 .env*
 !.env.example
 
@@ -34,13 +31,13 @@ lerna-debug.log*
 .DS_Store
 *.tmp
 *.swp
-.tmp
-tmp
-_**.tmp**
+**/.tmp/
+**/tmp/
+**/_*.tmp
 
-# IntelliJ Ignore
-/.idea
-/target
+# IntelliJ IDEA project files
+**/.idea/
+**/target/
 
-# VSCode Ignore
-/.vscode
+# Visual Studio Code project files
+**/.vscode/
